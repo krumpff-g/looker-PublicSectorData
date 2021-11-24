@@ -19,6 +19,7 @@ view: population_vs_lga {
   dimension: lga_code {
     type: number
     sql: ${TABLE}.LGA_code ;;
+    primary_key: yes
   }
 
   # A measure is a field that uses a SQL aggregate function. Here are defined sum and average
