@@ -36,6 +36,7 @@ view: vic_crash {
   dimension: accident_no {
     type: string
     sql: ${TABLE}.ACCIDENT_NO ;;
+    primary_key: yes
   }
 
   dimension: accident_status {

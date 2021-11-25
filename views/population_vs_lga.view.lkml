@@ -21,25 +21,19 @@ view: population_vs_lga {
     sql: ${TABLE}.LGA_code ;;
   }
 
- #  dimension: lga_PK  {
- #   type: string
- #   sql: CONCAT(${TABLE}.lga_code, ${TABLE}.age_group) ;;
- #   primary_key: yes
- # }
+   dimension: lga_PK  {
+    type: string
+    sql: CONCAT(${TABLE}.lga_code, ${TABLE}.age_group) ;;
+    primary_key: yes
+    hidden: yes
+  }
 
   # A measure is a field that uses a SQL aggregate function. Here are defined sum and average
   # measures for this dimension, but you can also add measures of many different aggregates.
   # Click on the type parameter to see all the options in the Quick Help panel on the right.
 
-  measure: total_lga_code {
-    type: sum
-    sql: ${lga_code} ;;
-  }
 
-  measure: average_lga_code {
-    type: average
-    sql: ${lga_code} ;;
-  }
+
 
   dimension: lga_name {
     type: string
