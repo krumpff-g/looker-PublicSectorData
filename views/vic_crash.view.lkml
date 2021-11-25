@@ -162,6 +162,13 @@ view: vic_crash {
     sql: ${TABLE}.LGA_NAME ;;
   }
 
+  dimension: location {
+  label: "Location"
+  type: location
+  sql_latitude: ${TABLE}.latitude ;;
+  sql_longitude: ${TABLE}.longitude ;;
+}
+
   dimension: lga_name_all {
     type: string
     sql: ${TABLE}.LGA_NAME_ALL ;;
