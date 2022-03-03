@@ -40,6 +40,11 @@ view: population_vs_lga {
     sql: ${TABLE}.LGA_name ;;
   }
 
+  dimension: lga_name2 {
+    type: string
+    sql: ${TABLE}.LGA_name ;;
+  }
+
   dimension: population {
     type: number
     sql: ${TABLE}.Population ;;
