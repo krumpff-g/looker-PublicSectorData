@@ -62,6 +62,6 @@ view: population_vs_lga {
 
   measure: count {
     type: count
-    drill_fields: [st_name, lga_name]
+    drill_fields: [st_name, lga_name, age_group]
   }
 }
